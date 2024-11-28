@@ -13,7 +13,16 @@
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 		/>
+
+		<style>
+			#map {
+			  height: 30px; /* Set height of the mini-map */
+			  width: 100%;   /* Make it responsive */
+			  border-radius: 8px; /* Optional styling */
+			}
+		  </style>
 	</head>
 	<body>
 		<header #="top">
@@ -174,7 +183,7 @@
 				</div> -->
 
 				<!-- Titles Below Stars -->
-
+<div class="container-fluid">
 				<div class="row text-center">
 					<div class="col-md-4 py-2">
 						<h3>Title</h3>
@@ -201,11 +210,50 @@
 						</p>
 					</div>
 				</div>
-			</div>
-			<div
+				</div>
 
-			
-				class="container-fluid bg-dark text-light my-5 py-5"
+
+				<div class="container mt-5">
+					<div class="row">
+					  <!-- Image Column -->
+					  <div class="col-6 d-flex align-items-center justify-content-center">
+						<img src="images/map1.jpg" class="img-fluid" alt="Placeholder Image">
+					  </div>
+					  <!-- Text Column -->
+					  <div class="col-6">
+						<header class="text-center">
+						  <h3>Map</h3>
+						</header>
+						<footer class="text-center py-5">
+						  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, deleniti dolore at doloribus facilis adipisci labore error porro rerum alias asperiores sequi, aliquid reprehenderit possimus nam voluptatum. Deleniti, doloremque unde natus sit sequi ratione quod aperiam saepe totam quibusdam neque adipisci ducimus atque exercitationem veniam? Quis expedita fuga voluptatibus quae!</p>
+						</footer>
+					  </div>
+					</div>
+				  </div>
+
+
+				 
+				
+				
+				  <div class="container mt-4">
+					<div class="row">
+					  <!-- Text Content -->
+					  <div class="col-md-6">
+						<h2>Location Overview</h2>
+						<p>Discover this amazing place! Check out the location on the map.</p>
+					  </div>
+					  <!-- Mini Map -->
+					  <div class="col-md-6">
+						<div id="map"></div>
+					  </div>
+					</div>
+				  </div>
+
+
+
+
+
+			<div class="container-fluid bg-dark text-light my-5 py-5"
 				id="#testimonial"
 			>
 				<div class="container-lg">
@@ -485,5 +533,23 @@
 			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
 			crossorigin="anonymous"
 		></script>
+		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+
+		<script>
+			// Initialize the map
+			const map = L.map('map').setView([37.7749, -122.4194], 13); // Example coordinates (San Francisco)
+		
+			// Add OpenStreetMap tiles
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			  maxZoom: 19,
+			  attribution: '© OpenStreetMap contributors'
+			}).addTo(map);
+		
+			// Add a marker
+			L.marker([37.7749, -122.4194]).addTo(map)
+			  .bindPopup('This is an example location.')
+			  .openPopup();
+		  </script>
 	</body>
 </html>
