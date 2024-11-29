@@ -1,52 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Bootstrap demo</title>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-			crossorigin="anonymous"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-		/>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Map Example</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  
+  <style>
+    #map {
+      height: 300px; /* Set height of the mini-map */
+      width: 100%;   /* Make it responsive */
+      border-radius: 8px; /* Optional styling */
+    }
+  </style>
+</head>
+<body>
 
-		<style>
-			#map {
-			  height: 30px; /* Set height of the mini-map */
-			  width: 100%;   /* Make it responsive */
-			  border-radius: 8px; /* Optional styling */
-			}
-		  </style>
-	</head>
-	<body>
-		<header #="top">
+  <!-- JumboTron -->
 
+  <div class="container-fluid dark py-5 my-5">
+    <div class="container-xl">
+        <div class="row vh-50 d-flex align-items-center">
+            <div class="col-md-12 text-center">
+                
+                <h1 class="fw-bold lh-1 display-4 pb-5 ">
+                    YOUR PATH TO SUSTAINABLE LIVING
+                </h1>
 
-			<!-- JumboTron -->
+                <a class="btn btn-primary btn-lg btn-block col-6 py-3" href="index01.html">Get Started</a>
 
-			<div class="container-fluid dark py-5 my-5">
-				<div class="container-xl">
-					<div class="row vh-50 d-flex align-items-center">
-						<div class="col-md-12 text-center">
-							
-							<h1 class="fw-bold lh-1 display-4 pb-5 ">
-								YOUR PATH TO SUSTAINABLE LIVING
-							</h1>
-
-							<button type="button" class="btn btn-primary btn-lg btn-block col-6 py-3">Get Started</button>
-
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
+                
+            </div>
+        </div>
+    </div>
+</div>
 
 		<!-- features of the app -->
 	
@@ -54,8 +46,8 @@
 		<main id="#main">
 			<div class="container-lg ">
 
- 			<div class="col-12 text-center ">
-                <h3>Our Apps' Resources</h3>
+ 			<div class="col-12 text-center border-top py-4">
+                <h3>Features of our App</h3>
             </div>
 
 				<div class="row py-5">
@@ -97,13 +89,12 @@
 				</div>
 			</div>
 
+            <div class="container ">
 
-			<div class="container ">
-
-				<div class="col-12 text-center py-5">
-				   <h3>Our Apps' Resources</h3>
+				<div class="col-12 text-center border-top py-4">
+				   <h3>Why Choose Sustainable Living ?</h3>
 			   </div>
-				   <div class="row ">
+				   <div class="row py-5">
 					<div class="col-md-6 col-sm-12 ">
 						<div class="card">
 							<h4 class="resource-header text-center">Cost Savings</h4>
@@ -127,7 +118,7 @@
 					</div>
 				</div>
 
-				<div class="row py-5">
+				<div class="row mb-5">
 					<div class="col-md-6 col-sm-12 ">
 						<div class="card">
 							<h4 class="resource-header text-center">Health Benefits</h4>
@@ -153,403 +144,92 @@
 			</div>
 
 
+			
+
+  <div class="container mt-4">
+	<div class="col-12 text-center border-top py-4">
+                <h3>Our Apps' Resources</h3>
+            </div>
+    <div class="row">
+      <!-- Text Content -->
+      <div class="col-md-6">
+        <h3>Map</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, deleniti dolore at doloribus facilis adipisci labore error porro rerum alias asperiores sequi, aliquid reprehenderit possimus nam voluptatum. Deleniti, doloremque unde natus sit sequi ratione quod aperiam saepe totam quibusdam neque adipisci ducimus atque exercitationem veniam? Quis expedita fuga voluptatibus quae!</p>
+      </div>
+      <!-- Mini Map -->
+      <div class="col-md-6">
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+  
+
+ 
+
+  <div class="container mt-5">
+	<div class="row col-12 py-4">
+
+<div class="card col-md-6">
+      <div class="card-body overflow-auto" style="max-height: 200px;">
+		<h5>Home Energy Grant</h5>
+        <p>The National Home Energy Upgrade Scheme provides grants to upgrade the energy efficiency of your property.</p>
+		<h5>Green Plus Grant</h5>
+        <p>The Green Plus grant helps your business to prepare for a greener, more sustainable future.</p>
+		<h5>Climate Action Voucher</h5>
+        <p>With this support, help your business to plan for a green transformation by reducing emissions and becoming more resource efficient.</p>
+		<h5>Green Start</h5>
+        <p>GreenStart is helping businesses to improve their environmental performance through greater resource efficiency.</p>
+		<h5>SCA</h5>
+        <p>A strategy consultant can provide your business with unbiased insights to help you adapt to change, unearth new opportunities and develop a competitive advantage.</p>
+      </div>
+    </div>
 
 
-				<!-- Star Ratings -->
-<!-- 				
-				<hr class="border border-1 opacity-10 my-3" />
-				<div class="row my-5 justify-content-sm-center">
-					<div
-						class="col-3 btn-group"
-						role="group"
-						aria-label="Basic mixed styles example"
-					>
-						<button type="button" class="btn btn-outline-warning border-0">
-							<i class="bi bi-star-fill fs-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-warning border-0">
-							<i class="bi bi-star-fill fs-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-warning border-0">
-							<i class="bi bi-star-fill fs-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-warning border-0">
-							<i class="bi bi-star-fill fs-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-warning border-0">
-							<i class="bi bi-star-fill fs-3"></i>
-						</button>
-					</div>
-				</div> -->
+	<div class="col-md-6">
+        <h3>Grants</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, deleniti dolore at doloribus facilis adipisci labore error porro rerum alias asperiores sequi, aliquid reprehenderit possimus nam voluptatum. Deleniti, doloremque unde natus sit sequi ratione quod aperiam saepe totam quibusdam neque adipisci ducimus atque exercitationem veniam? Quis expedita fuga voluptatibus quae!</p>
+	</div>
+	</div>
+  </div>
 
-				<!-- Titles Below Stars -->
-<div class="container-fluid">
-				<div class="row text-center">
-					<div class="col-md-4 py-2">
-						<h3>Title</h3>
-						<p class="text-secondary fw-3 fs-5">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-							dolor ad magnam ullam aperiam est ducimus? Magnam, voluptatum
-							tempora. Veniam!
-						</p>
-					</div>
-					<div class="col-md-4 py-2">
-						<h3>Title</h3>
-						<p class="text-secondary fw-3 fs-5">
-							Minima eius ipsam cupiditate illum excepturi. A quis, excepturi,
-							magnam minima expedita maiores et cum nisi aspernatur commodi,
-							temporibus eius.
-						</p>
-					</div>
-					<div class="col-md-4 py-2">
-						<h3>Title</h3>
-						<p class="text-secondary fw-3 fs-5">
-							Eaque tempore consequatur porro ratione id ipsum excepturi
-							quisquam dolorum quibusdam ex laborum aliquid, necessitatibus
-							autem exercitationem corrupti officia doloribus.
-						</p>
-					</div>
-				</div>
-				</div>
+  <div class="container mt-5">
+    <div class="row col-12 py-4"> 
+    
+<div class="col-md-6">
+          <h3>Renewable Materials</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, deleniti dolore at doloribus facilis adipisci labore error porro rerum alias asperiores sequi, aliquid reprehenderit possimus nam voluptatum. Deleniti, doloremque unde natus sit sequi ratione quod aperiam saepe totam quibusdam neque adipisci ducimus atque exercitationem veniam? Quis expedita fuga voluptatibus quae!</p>
+      </div>
 
+       <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <img src="images/map1.jpg" class="img-fluid" alt="Placeholder Image">
+      </div> 
+      
+       
+    </div>
+  </div> 
 
-				<div class="container mt-5">
-					<div class="row">
-					  <!-- Image Column -->
-					  <div class="col-6 d-flex align-items-center justify-content-center">
-						<img src="images/map1.jpg" class="img-fluid" alt="Placeholder Image">
-					  </div>
-					  <!-- Text Column -->
-					  <div class="col-6">
-						<header class="text-center">
-						  <h3>Map</h3>
-						</header>
-						<footer class="text-center py-5">
-						  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, deleniti dolore at doloribus facilis adipisci labore error porro rerum alias asperiores sequi, aliquid reprehenderit possimus nam voluptatum. Deleniti, doloremque unde natus sit sequi ratione quod aperiam saepe totam quibusdam neque adipisci ducimus atque exercitationem veniam? Quis expedita fuga voluptatibus quae!</p>
-						</footer>
-					  </div>
-					</div>
-				  </div>
+ 
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  
+  <script>
+    // Initialize the map
+    const map = L.map('map').setView([37.7749, -122.4194], 13); // Example coordinates (San Francisco)
 
-				 
-				
-				
-				  <div class="container mt-4">
-					<div class="row">
-					  <!-- Text Content -->
-					  <div class="col-md-6">
-						<h2>Location Overview</h2>
-						<p>Discover this amazing place! Check out the location on the map.</p>
-					  </div>
-					  <!-- Mini Map -->
-					  <div class="col-md-6">
-						<div id="map"></div>
-					  </div>
-					</div>
-				  </div>
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
 
-
-
-
-
-			<div class="container-fluid bg-dark text-light my-5 py-5"
-				id="#testimonial"
-			>
-				<div class="container-lg">
-					<div class="row justify-content-center">
-						<div class="col-7 text-center">
-							<p class="text-uppercase fw-bold fs-6">
-								<small>Testimonial</small>
-							</p>
-							<p class="text-md-center fs-2 fw-semibold py-5">
-								“innovative solution. Simplicity and ease of communication with
-								customers and friends. I recommend it.”
-							</p>
-							<img
-								src="images/headshot.jpg"
-								class="img-fluid img-thumbnail rounded-circle"
-								alt="..."
-							/>
-							<p class="fw-semibold text-uppercase py-5">
-								Anna Moringo / <span class="fw-light">Project Manager</span>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container-lg my-5 py-5">
-				<div class="row justify-content-center">
-					<div class="col-5 text-center">
-						<i class="display-1 text-success bi bi-boxes"></i>
-					</div>
-				</div>
-				<div class="row d-flex align-items-center">
-					<div class="col-md-6">
-						<p class="text-uppercase fw-bold fs-6 text-primary">
-							<small>Get Started</small>
-						</p>
-						<h1 class="fw-bold lh-1 display-5">
-							This really is a great product!
-						</h1>
-						<p class="fw-semibold text-secondary">
-							If you BUY now, I’ll be sending you another mystery bonus as a
-							token of appreciation. I’m selling this for $297 but you’re
-							getting it for FREE Today!
-						</p>
-					</div>
-					<div class="col">
-						<img src="images/2.png" class="img-fluid" lt="" />
-					</div>
-				</div>
-				<hr class="border border-1 opacity-10" />
-				<div class="row d-flex align-items-center">
-					<div class="col">
-						<img src="images/3.png" class="img-fluid" lt="" />
-					</div>
-					<div class="col-md-6">
-						<p class="text-uppercase fw-bold fs-6 text-primary">
-							<small>Get Started</small>
-						</p>
-						<h1 class="fw-bold lh-1 display-5">
-							This really is a great product!
-						</h1>
-						<p class="fw-semibold text-secondary">
-							If you BUY now, I’ll be sending you another mystery bonus as a
-							token of appreciation. I’m selling this for $297 but you’re
-							getting it for FREE Today!
-						</p>
-						<div class="row py-5">
-							<div class="col-6">
-								<i class="bi bi-check2-circle text-primary fs-5 fw-bold"></i>
-								<h4>Title</h4>
-								<p>
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-									Magnam odio assumenda minus illum eligendi eius.
-								</p>
-							</div>
-							<div class="col-6">
-								<i class="bi bi-check2-circle text-primary fs-5 fw-bold"></i>
-								<h4>Title</h4>
-								<p>
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-									Magnam odio assumenda minus illum eligendi eius.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<hr class="border border-1 opacity-10" />
-				<div
-					class="row justify-content-md-center justify-content-sm-start pt-3"
-				>
-					<div class="col-8">
-						<p class="text-md-center text-primary text-uppercase fw-bold fs-6">
-							<small>FAQ</small>
-						</p>
-						<p class="text-md-center fs-2 fw-semibold py-3">
-							List of questions and answers about our community
-						</p>
-					</div>
-					<div class="row">
-						<div class="col-md-6 d-flex">
-							<div class="px-5">
-								<i
-									class="bi bi-1-circle text-primary fs-3 align-self-start"
-								></i>
-							</div>
-							<div>
-								<h3>Get Started</h3>
-								<p>
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-									Ipsa, incidunt maiores! Unde error sint suscipit.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-6 d-flex">
-							<div class="px-5">
-								<i
-									class="bi bi-2-circle text-primary fs-3 align-self-start"
-								></i>
-							</div>
-							<div>
-								<h3>Get Started</h3>
-								<p>
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-									Ipsa, incidunt maiores! Unde error sint suscipit.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-6 d-flex">
-							<div class="px-5">
-								<i
-									class="bi bi-3-circle text-primary fs-3 align-self-start"
-								></i>
-							</div>
-							<div>
-								<h3>Get Started</h3>
-								<p>
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-									Ipsa, incidunt maiores! Unde error sint suscipit.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-6 d-flex">
-							<div class="px-5">
-								<i
-									class="bi bi-4-circle text-primary fs-3 align-self-start"
-								></i>
-							</div>
-							<div>
-								<h3>Get Started</h3>
-								<p>
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-									Ipsa, incidunt maiores! Unde error sint suscipit.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="container-fluid bg-light">
-				<div class="container-lg">
-					<div class="row justify-content-center mt-5 py-5">
-						<div class="col-5 text-center py-5">
-							<i class="display-1 text-success bi bi-envelope-fill"></i>
-						</div>
-						<div class="row justify-content-md-center justify-content-sm-start">
-							<div class="col-md-8">
-								<p
-									class="text-md-center text-success text-uppercase fw-bold fs-6"
-								>
-									<small>Get Started</small>
-								</p>
-								<p class="text-md-center fs-2 fw-semibold">
-									It really is such a great product - Elon would be so proud of
-									us.
-									<span class="text-muted">We're a great bunch of people.</span>
-								</p>
-								<p class="text-md-center py-2">
-									Leave us your e-mail and we will get back to you. This is the
-									first step to becoming a tester.
-								</p>
-								<div class="input-group pt-2 pb-5">
-									<input
-										type="text"
-										class="form-control py-3"
-										placeholder="Recipient's username"
-										aria-label="Recipient's username"
-										aria-describedby="button-addon2"
-									/>
-									<button
-										class="btn btn-outline-secondary"
-										type="button"
-										id="button-addon2"
-									>
-										Button
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container-fluid bg-dark text-light py-5">
-				<div class="container-lg">
-					<div class="row">
-						<div class="col-md-5">
-							<p class="text-uppercase fw-bold fs-6 pb-5">
-								<small>about us</small>
-							</p>
-							<h3>Get Started</h3>
-							<p>
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa,
-								incidunt maiores! Unde error sint suscipit.
-							</p>
-						</div>
-						<div class="col-md-2">
-							<p class="text-uppercase fw-bold fs-6 pb-5">
-								<small>navigation</small>
-							</p>
-							<h3>Get Started</h3>
-							<ul class="list-group list-group-flush">
-								<li
-									class="list-group-item bg-dark text-light fs-5 border-0 px-0 py-1"
-								>
-									An item
-								</li>
-								<li
-									class="list-group-item bg-dark text-light fs-5 border-0 px-0 py-1"
-								>
-									A second item
-								</li>
-								<li
-									class="list-group-item bg-dark text-light fs-5 border-0 px-0 py-1"
-								>
-									A third item
-								</li>
-								<li
-									class="list-group-item bg-dark text-light fs-5 border-0 px-0 py-1"
-								>
-									A fourth item
-								</li>
-								<li
-									class="list-group-item bg-dark text-light fs-5 border-0 px-0 py-1"
-								>
-									And a fifth one
-								</li>
-							</ul>
-						</div>
-						<div class="col-md-4">
-							<p class="text-uppercase fw-bold fs-6 pb-5">
-								<small>Beta Application</small>
-							</p>
-							<h3>Join the beta for application</h3>
-							<div>
-								<button type="button" class="btn btn-outline-light button-lg">
-									Button
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="currentColor"
-										class="bi bi-caret-right-fill"
-										viewBox="0 0 16 16"
-									>
-										<path
-											d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
-										></path>
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-			crossorigin="anonymous"
-		></script>
-		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-
-		<script>
-			// Initialize the map
-			const map = L.map('map').setView([37.7749, -122.4194], 13); // Example coordinates (San Francisco)
-		
-			// Add OpenStreetMap tiles
-			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-			  maxZoom: 19,
-			  attribution: '© OpenStreetMap contributors'
-			}).addTo(map);
-		
-			// Add a marker
-			L.marker([37.7749, -122.4194]).addTo(map)
-			  .bindPopup('This is an example location.')
-			  .openPopup();
-		  </script>
-	</body>
+    // Add a marker
+    L.marker([37.7749, -122.4194]).addTo(map)
+      .bindPopup('This is an example location.')
+      .openPopup();
+  </script>
+</body>
 </html>
